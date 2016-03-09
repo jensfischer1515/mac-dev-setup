@@ -1,0 +1,40 @@
+---
+
+- name: Install entertainment tools
+  homebrew: name={{item}}
+  with_items:
+    - cowsay
+    - ffmpeg
+    - lame
+    - gifsicle
+
+- name: Install entertainment binary tools
+  homebrew_cask: name={{item}}
+  with_items:
+    - adium
+    - teamviewer
+    - thunderbird
+    - dropbox
+    - google-drive
+    - skype
+    - spotify
+    - deezer
+    - boxcryptor-classic
+    - vlc
+    - libreoffice
+    - mpeg-streamclip
+    - burn
+    - audacity210
+    - imageoptim
+    - logitech-harmony
+    - logitech-myharmony
+    - kodi
+    - avidemux
+    - airfoil
+    - handbrake
+    - google-earth
+    - twitterrific
+    - comicbooklover
+    - dupeguru
+    - xnconvert
+    - xnviewmp

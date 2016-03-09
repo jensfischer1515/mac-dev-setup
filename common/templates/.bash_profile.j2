@@ -22,7 +22,6 @@ function prompt_command() {
 PROMPT_COMMAND=prompt_command
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/latest/Contents/Home
-
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export M2_HOME=/usr/local/opt/maven/libexec
 export GRADLE_HOME=/usr/local/opt/gradle/libexec
@@ -49,3 +48,16 @@ alias dclean-exited='docker rm -v $(docker ps -a -q -f status=exited)'
 # gcloud
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
+
+# LOCAL ADDITIONS
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# http://stackoverflow.com/questions/20130681/setting-github-api-token-for-homebrew
+export HOMEBREW_GITHUB_API_TOKEN=0000000000000000000000000000000000000000
+
+export LOLCOMMITS_DELAY=2
+
+export APT_PROXY=http://192.168.59.4:8000
+
+export PATH="~/dev/git/ng/ng-infra/dev:$PATH"
