@@ -26,7 +26,7 @@ echo "==========================================================================
 echo ""
 
 read -p "Please specify your username for this machine: " DEV_USERNAME
-read -p "Please specify your desired hostname for this machine: " DEV_HOSTNAME
+read -p "Please specify your desired hostname for this machine (e.g. re-use your username): " DEV_HOSTNAME
 read -p "Please specify your email: " DEV_EMAIL
 read -p "Please specify your first and last name: " DEV_FULLNAME
 

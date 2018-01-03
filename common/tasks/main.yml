@@ -77,3 +77,6 @@
 - name: Ensure ComputerName is set
   sudo: yes
   shell: scutil --set ComputerName {{ ansible_env.DEV_HOSTNAME }}
+
+# NetBIOS Name: jfischer
+# Workgroup: intern
